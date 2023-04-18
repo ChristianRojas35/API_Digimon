@@ -1,1 +1,34 @@
-/* Aquí van los estilos*/
+#card {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+#tabla_principal {
+    background-color: white;
+    margin-top: 6%;
+}
+
+#tabla_nivel {
+    display: none;
+    margin-top: 6%;
+}
+
+#tarjSola {
+    text-align: center;
+    background-color: bisque;
+    margin-top: 6%;
+}
+
+
+.home:hover,li:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.rotate:hover {
+    transform: rotateY(25deg);
+}
+
+.zoomText:hover {
+    font-size:25px;
+}

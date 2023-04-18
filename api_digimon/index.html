@@ -21,7 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="">Digimon</a>
+            <a class="navbar-brand home" href="">Digimon</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -38,8 +38,8 @@
                             Filtros
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Niveles</a></li>
-                            <li><a class="dropdown-item" href="#">Imágenes</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="mostrarNivel()">Niveles</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="mostrarImagenes()">Imágenes</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -50,7 +50,11 @@
             </div>
         </div>
     </nav>
-    <table class="table container">
+
+    <div id="carta"></div>
+    <div id="galeria"></div>
+
+    <table id="tabla_principal" class="table container">
         <thead>
             <tr>
                 <th scope="col">Nombre</th>
@@ -63,6 +67,21 @@
                 <th scope="row">Koromon</th>
                 <th>url a imagen</th>
                 <th>rookie</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-dark table-striped container" id="tabla_nivel" style="width: 40%;">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Especie</th>
+            </tr>
+        </thead>
+        <tbody id="contenido2">
+            <tr>
+                <td>Agumon</td>
+                <td>Rookie</td>
             </tr>
         </tbody>
     </table>
